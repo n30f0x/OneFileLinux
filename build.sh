@@ -11,8 +11,8 @@ MODULESPATH="$ROOTFS/lib/modules/"
 DEVURANDOM="$ROOTFS/dev/urandom"
 
 # Kernel variables
-KERNELVERSION="4.14.22-onefile"
-KERNELPATH="linux-4.14.22"
+KERNELVERSION="6.3-onefile"
+KERNELPATH="linux-6.3"
 export INSTALL_MOD_PATH="../$ROOTFS/"
 
 # Macbook 2015-2017 SPI keyboard driver
