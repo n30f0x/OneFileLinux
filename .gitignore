@@ -1,3 +1,4 @@
 alpine-minirootfs/lib/modules/*
 linux-firmware/
 OneFileLinux.efi
+*.swp
