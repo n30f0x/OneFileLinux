@@ -17,15 +17,15 @@ cat ./zfiles/shadow > ./alpine-minirootfs/etc/shadow
 cat ./zfiles/init > ./alpine-minirootfs/init
 chmod +x ./alpine-minirootfs/init
 
-#mv ./alpine-minirootfs/etc/profile.d/color_prompt ./alpine-minirootfs/etc/profile.d/color_prompt.sh
-#mv ./alpine-minirootfs/etc/profile.d/locale ./alpine-minirootfs/etc/profile.d/locale.sh
-#chmod +x ./alpine-minirootfs/etc/profile.d/*.sh
-#mkdir ./alpine-minirootfs/media/ubuntu
-#cat > ./alpine-minirootfs/etc/fstab << EOF
-#/dev/cdrom	/media/cdrom	iso9660	noauto,ro 0 0
-#/dev/usbdisk	/media/usb	vfat	noauto,ro 0 0
-#/dev/sda5	/media/ubuntu	ext4	rw,relatime 0 0
-#EOF
+# mv ./alpine-minirootfs/etc/profile.d/color_prompt ./alpine-minirootfs/etc/profile.d/color_prompt.sh
+# mv ./alpine-minirootfs/etc/profile.d/locale ./alpine-minirootfs/etc/profile.d/locale.sh
+# chmod +x ./alpine-minirootfs/etc/profile.d/*.sh
+# mkdir ./alpine-minirootfs/media/ubuntu
+# cat > ./alpine-minirootfs/etc/fstab << EOF
+# /dev/cdrom	/media/cdrom	iso9660	noauto,ro 0 0
+# /dev/usbdisk	/media/usb	vfat	noauto,ro 0 0
+# /dev/sda5	/media/ubuntu	ext4	rw,relatime 0 0
+# EOF
 
 mkdir -p alpine-minirootfs/lib/
 tar -C alpine-minirootfs/lib/ -xf zfiles/firmware.tar.xz
