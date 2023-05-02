@@ -15,3 +15,5 @@ chmod +x alpine-minirootfs/mk.sh
 echo "run ./mk.sh"
 
 chroot alpine-minirootfs /bin/ash
+./mk.sh
+rm alpine-minirootfs/mk.sh

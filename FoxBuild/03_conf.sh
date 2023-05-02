@@ -27,9 +27,9 @@ chmod +x ./alpine-minirootfs/init
 # /dev/sda5	/media/ubuntu	ext4	rw,relatime 0 0
 # EOF
 
-mkdir -p alpine-minirootfs/lib/
-tar -C alpine-minirootfs/lib/ -xf zfiles/firmware.tar.xz
-cp zfiles/.config linux/
+mkdir -p ./alpine-minirootfs/lib/
+tar -C ./alpine-minirootfs/lib/ -xf zfiles/firmware.tar.xz
+cp ./zfiles/.config ./linux/
 
 cd linux
 make oldconfig
